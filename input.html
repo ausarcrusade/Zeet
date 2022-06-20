@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+    <form class="grid" action="/result" method="POST">
+
+
+        
+        <label for="input1">Input1:</label>
+        <input type="text" id="input1" name="input1">
+
+        <label for="input2">Input2:</label>
+        <input type="text" id="input2" name="input2">
+
+        <center><input class="file_submit" type="Submit"></center>
+
+        {% if result %}
+        <center>
+            <h1>{{result1}}</h1>
+
+            <h1>{{result2}}</h1>
+        
+            <h1>The score is: {{result}}</h1>
+            <h1>{{result3}}</h1>
+            <h1>{{result4}}</h1>
+        </center> 
+
+        {% endif %}
+        
+
+    <!-- </form>
+    <form class="grid" action="/result" method="POST">
+        <label for="input2">Input2:</label>
+        <input type="text" id="input2" name="input2">
+
+    </form> -->
+{% endblock content %}
